@@ -1,0 +1,416 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #fbfbfb;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header .nav-bar {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 24px auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+header .nav-bar ul {
+  display: flex;
+}
+header .nav-bar ul li {
+  margin-left: 40px;
+}
+header .nav-bar ul li a {
+  text-decoration: none;
+  color: #000;
+}
+header .nav-bar ul li a:hover {
+  color: #0027d5;
+}
+
+main .banner {
+  display: flex;
+  height: calc(100vh - 90px);
+  width: 100%;
+}
+main .banner .img-section-l {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section.png?raw=true);
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+}
+main .banner .img-section-r {
+  background-image: url(/img/Hero-Section2.png);
+  width: 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .banner .img-section-r .img-content {
+  padding-left: 80px;
+}
+main .banner .img-section-r .img-content h1 {
+  font-weight: 900;
+  font-size: 120px;
+  color: #0027d5;
+}
+main .banner .img-section-r .img-content p {
+  font-weight: 700;
+  font-size: 28px;
+  color: #0027d5;
+  margin-top: 12px;
+}
+main .article {
+  display: flex;
+}
+main .article .art-img {
+  display: block;
+  width: 50%;
+}
+main .article .art-img img {
+  max-width: 100%;
+}
+main .article .art-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+main .article .art-main .main-info {
+  max-width: 636px;
+  margin-left: 24px;
+}
+main .article .art-main .main-info .art-slogan {
+  font-size: 24px;
+  color: #0027d5;
+  display: flex;
+  align-items: center;
+}
+main .article .art-main .main-info .art-slogan a {
+  background-color: #0027d5;
+  font-size: 1rem;
+  border-radius: 40px;
+  padding: 6px 12px;
+  color: #fff;
+  vertical-align: baseline;
+  text-decoration: none;
+  margin-left: 20px;
+}
+main .article .art-main .main-info h2 {
+  font-weight: 700;
+  font-size: 28px;
+}
+main .article .art-main .main-info .art-info {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+main .article .art-main .main-info .more {
+  margin-top: 16px;
+}
+main .article .art-main .main-info .more .btn {
+  text-decoration: none;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 40px;
+  padding: 8px 16px;
+  transition: color 0.2s ease;
+}
+main .article .art-main .main-info .more .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+main .container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+main .container .search {
+  border: 1px solid #000;
+  max-width: 416px;
+  border-radius: 40px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  margin-top: 80px;
+  display: flex;
+  overflow: hidden;
+}
+main .container .search .search-box {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+main .container .blog-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
+  grid-gap: 24px;
+}
+main .container .blog-card .card {
+  margin-top: 40px;
+}
+main .container .blog-card .card a {
+  font-size: 24px;
+  color: #0027d5;
+  text-decoration: none;
+}
+main .container .blog-card .card h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+main .container .blog-card .card .linkTag {
+  background-color: #0027d5;
+  font-size: 1rem;
+  border-radius: 50px;
+  padding: 8px;
+  color: #fff;
+  vertical-align: baseline;
+}
+main .container .blog-card .card .text {
+  color: #4b4b4b;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+main .container .blog-card .card .btn {
+  border: 1px solid #000;
+  color: #000;
+  font-size: 1rem;
+  border-radius: 50px;
+  padding: 8px;
+}
+main .container .blog-card .card .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+main .container .pagination {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbfbfb;
+  border-radius: 40px;
+  padding: 8px 20px;
+  width: 328px;
+  margin: 40px auto;
+}
+main .container .pagination .pag {
+  display: flex;
+  background-color: #fff;
+  border-radius: 40px;
+}
+main .container .pagination .pag .pag-num {
+  padding: 8px 10px;
+}
+main .container .pagination .pag .pag-num a {
+  text-decoration: none;
+}
+main .container .pagination .pag .pag-num a:hover {
+  color: #0027d5;
+}
+main .container .pagination .pag .pag-num .pag-mark {
+  color: #0027d5;
+}
+main .container .community {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .container .community .mail {
+  font-size: 32px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+main .container .community .icon {
+  display: flex;
+  margin-top: 82px;
+  margin-bottom: 82px;
+  cursor: pointer;
+}
+
+footer p {
+  margin: 24px auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 881px) {
+  main .banner {
+    display: flex;
+    flex-direction: column;
+  }
+  main .banner .img-section-l {
+    height: 75vh;
+    width: 100%;
+  }
+  main .banner .img-section-r {
+    width: 100%;
+  }
+  main .banner .img-section-r .img-content h1 {
+    font-size: 52px;
+  }
+  main .banner .img-section-r .img-content p {
+    padding-bottom: 24px;
+  }
+  main .article {
+    display: flex;
+    flex-direction: column;
+  }
+  main .article .art-img {
+    width: 100%;
+  }
+  main .article .art-main {
+    width: 100%;
+    margin: 48px auto;
+  }
+  main .container .blog-card {
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  }
+  main .container .blog-card .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  main .container .community {
+    display: none;
+  }
+}/*# sourceMappingURL=app.css.map */
